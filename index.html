@@ -96,7 +96,7 @@ h1,h2,h3{ margin:0; font-weight:600; line-height:1.16; letter-spacing:-.01em; }
 
 /* hero */
 .hero{ text-align:center; padding-top:clamp(48px,8vw,86px); }
-.hero-dog{ width:clamp(64px,12vw,92px); margin:0 auto 1.4rem; }
+.hero-dog{ width:clamp(120px,22vw,180px); margin:0 auto 1.4rem; }
 .hero h1{ font-family:var(--serif); font-weight:500; font-size:clamp(3rem,11vw,6rem); line-height:1; letter-spacing:.04em; }
 .hero h1 sup{ font-size:.42em; vertical-align:super; }
 .hero .tag{ font-size:.78rem; letter-spacing:.42em; text-transform:uppercase; color:var(--muted); margin-top:1rem; }
@@ -146,6 +146,8 @@ h1,h2,h3{ margin:0; font-weight:600; line-height:1.16; letter-spacing:-.01em; }
 .addr .land{ display:block; color:var(--muted); font-size:.9rem; margin-top:.3rem; }
 .addr .tel{ display:block; font-family:var(--serif); font-size:1.7rem; margin:1rem 0 .1rem; letter-spacing:.02em; }
 .iblock .acts{ display:flex; gap:.6rem; flex-wrap:wrap; margin-top:1.4rem; }
+.iblock.center{ display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+.iblock.center .acts{ justify-content:center; }
 @media (max-width:680px){ .info-grid{ grid-template-columns:1fr; } .iblock + .iblock{ border-left:none; border-top:1px solid var(--ink); } }
 
 /* footer */
@@ -205,6 +207,7 @@ h1,h2,h3{ margin:0; font-weight:600; line-height:1.16; letter-spacing:-.01em; }
       <div class="note"><b>소금빵</b><span>매일 11시 30분 이후에 나와요. 방문 전 연락 주시면 좋아요!</span></div>
       <div class="note"><b>홀케이크 주문</b><span>홀케이크는 최소 2일 전 주문 부탁드려요.</span></div>
       <div class="note"><b>딸기 케이크</b><span>딸기 케이크는 시즌 한정 제품이에요.</span></div>
+      <div class="note"><b>오늘의 빵</b><span>매일 만드는 메뉴가 달라요. 오늘의 라인업은 인스타그램 공지를 확인해 주세요!</span></div>
     </div>
   </div>
 </section>
@@ -251,7 +254,7 @@ h1,h2,h3{ margin:0; font-weight:600; line-height:1.16; letter-spacing:-.01em; }
         </ul>
         <p class="menu-note" style="text-align:left;margin-top:1rem">명절 연휴는 별도 휴무 · 소금빵은 11시 30분 이후 나와요.</p>
       </div>
-      <div class="iblock">
+      <div class="iblock center">
         <h3>Find Us</h3>
         <p class="addr">
           스타타워 2차 1층
