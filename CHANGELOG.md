@@ -16,6 +16,11 @@
 - **시그니처 6번째 카드 교체**: "딸기 타르트"(사진이 실제로는 크루아상 생지 성형 컷 — 불일치) → **무화과 캉파뉴(Fig Campagne)**. IG 원본 619845979(무화과·호두 캉파뉴 단면)를 900×900 webp로 slug(o3-campagne.webp). 빵 하드계열 추가로 메뉴 다양성↑.
 - 구 이미지 o3-tart-strawberry.webp = 마운트 삭제 불가라 .assetsignore로 배포 제외.
 
+## v0.5 — 2026-09-26 (한글 세리프 궁서 트랩 수정)
+- **`--serif` 체인에 Noto Serif KR 추가**: `"Cormorant Garamond", "Noto Serif KR", "Apple SD Gothic Neo", serif`. 기존 체인엔 웹 로드 한글 세리프가 없어(Apple SD Gothic Neo=맥 전용) Windows에서 한글 헤딩·리드가 궁서/바탕으로 깨졌음. CDN에 `family=Noto+Serif+KR:wght@500;600`(쓰는 굵기만 스코프) 추가.
+- 영향 셀렉터: `.hero h1`·`.hero .lead`·`.sec-head h2`·`.intro h2`·`.iblock h3`·`.site-foot .big` 등 한글 다수.
+- LESSONS.md §22로 규칙화(라틴 세리프 헤딩 쓸 때 한글 세리프 체인 기본 포함). 납품 시 서브셋 self-host 전환 예정.
+
 ## v0.1 — 2026-09-25 (최초 시안)
 - **이미지 큐레이션**: IG 원본 60장에서 로고(O³ BAKERY CAFE 워드마크)+식빵 강아지 캐릭터+제품 실사진 6종(크루아상·에그타르트·딸기 생크림 케이크·당근 케이크·청포도 케이크·딸기 타르트) 선별. 리포스트(단추과자상점·우고빵·OVENDAYS·YP)·텍스트오버레이(공지·이벤트·기념일)·불쇼 제외. webp `o3-` slug + favicon + og jpg.
 - **디자인**: 화이트+블랙 모던 미니멀(심플/큐트 지향). 로고의 우아한 세리프에 맞춰 Cormorant Garamond(디스플레이)+Pretendard(본문). 순수 B&W, 얇은 헤어라인·1px 그리드. **강아지 캐릭터는 히어로·푸터에만 절제 사용**.
